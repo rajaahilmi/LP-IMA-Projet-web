@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fpsb web</title>
+    <link href="styleFORM.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Registration formulaire
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <label>Nom</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Prénom</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label for="cin">CIN</label>
+                <input type="text" class="input" id="cin" name="cin" placeholder="Entrez votre numéro national">
+            </div>
+            <div class="input_field">
+                <label for="cne">CNE</label>
+                <input type="text" class="input" id="cne" name="cne" placeholder="Entrez votre numéro d'étudiant">
+            </div>
+            <div class="input_field">
+                <label>Password</label>
+                <input type="password" class="input">
+            </div>
+            
+
+            <div class="input_field">
+                <label>sex</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Choisir</option>
+                        <option value="male">masculain</option>
+                        <option value="female">Féminin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Email Address:</label>
+                <input type="email" class="input">
+            </div>
+            <div class="input_field">
+                <label>Télephone</label>
+                <input type="text" class="input">
+            </div>
+        
+            <div class="input_field">
+                <input type="submit" value="Accéder" class="btn" id="registerBtn">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("registerBtn").addEventListener("click", function() {
+            window.location.href = "Accueil.html";
+        });
+    </script>
+
+</body>
+</html>
